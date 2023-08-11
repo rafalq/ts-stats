@@ -1,15 +1,11 @@
-import { CsvFileReader } from './classes/CsvFileReader';
+// import { CsvFileReader } from './classes/CsvFileReader';
 import { readCsvFile } from './functions/readCsvFile';
-
-enum MatchResult {
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D',
-}
+import { MatchResult } from './MatchResults';
 
 // func
 console.log('--- func ---');
 const data = readCsvFile('football.csv');
+console.log(data);
 
 let manUnitedWins = 0;
 
