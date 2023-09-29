@@ -13,5 +13,6 @@ export class HtmlReport implements OutputTarget {
     `;
 
     fs.writeFileSync(`${this.fileName}.html`, html);
+    console.log('Successfully file created!');
   }
 }
